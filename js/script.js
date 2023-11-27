@@ -62,5 +62,39 @@ for (let i=0; i<images.length; i++){
     }
 
 
-    
+
+
+let activeIndex = 0 ;
+const imageElements = document.querySelectorAll('main>img');
+imageElements[activeIndex].classList.add('active');
+
+
+
+
+
+const buttonUp = document.querySelector('button.up')
+
+buttonUp.addEventListener('click', function(){
+       //** Con il click del pulsante UP ripartiamo dalla 5 immagine a salire  
+       imageElements[activeIndex].classList.remove('active');
+       activeIndex=activeIndex + 1;
+       imageElements[activeIndex].classList.add('active')
+         
+
+
+})
+
+
+const buttonDown = document.querySelector('button.down')
+
+buttonDown.addEventListener('click', function(){
+       //** Con il click del pulsante UP ripartiamo dalla 5 immagine a scendere e se vogliamo a far ripartire dall'ultima immagine  
+       imageElements[activeIndex].classList.remove('active');
+       activeIndex=activeIndex - 1;
+       imageElements[activeIndex].classList.add('active')
+
+
+})
+
+
 
