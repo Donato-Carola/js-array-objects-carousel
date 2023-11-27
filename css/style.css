@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+main{
+    position: relative;
+   margin: 0 auto;
+    background-color: aqua;
+   width: 80%;
+   height: calc(70vh - 200px);
+   margin-top: 200px;
+   
+   
+   
+}
+
+aside{
+    position: absolute;
+    right: 0;
+    background-color: black;
+    width: 30%;
+    height: 100%;
+}
+
+
+
+div#firstDiv{
+
+  background-color: aqua;
+}
+
+div#secondDiv{
+    background-color: blue;
+  }
+
+  div#thirdDiv{
+    background-color: magenta;
+  }
+
+  div#fourthDiv{
+    background-color:violet;
+  }
+
+  div#fifthDiv{
+    background-color: rgb(255, 30, 0);
+  }
+
+  button#up{
+    position: absolute;
+   bottom: 95%;
+    left: 50%;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    
+  }
+
+  button#down{
+   
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+  }
+   
+  
+ 
+
