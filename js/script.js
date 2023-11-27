@@ -47,13 +47,13 @@ const images = [
 
 
 
-
+const main = document.querySelector('main')
 const aside = document.querySelector('aside')
 
 for (let i=0; i<images.length; i++){
+    
     aside.innerHTML +=`<div class="col-12 p-0"><img src='${images[i].image}'> </div>`
 }
-
 
 
 
