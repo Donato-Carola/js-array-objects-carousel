@@ -52,8 +52,17 @@ const aside = document.querySelector('aside')
 
 for (let i=0; i<images.length; i++){
     
-    aside.innerHTML +=`<div class="col-12 p-0"><img src='${images[i].image}'> </div>`
+    aside.innerHTML +=`<img class="w-100 p-0" src='${images[i].image}'> `
 }
 
+const arrowUp = document.querySelector('button.up')
+
+arrowUp.addEventListener('click', function(){
+    for(let i=0; i<images.length;i++){
+       const imgGame = document.createElement('img')
+       imgGame.src=images[i].image
+       main.appendChild(imgGame)
+    }
+})
 
 
